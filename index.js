@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const port = process.env.SERVER_HOST_PORT;
 let  totalRequest = 0; 
-const interval = 5000; // in miliseconds
+const interval = 2000; // in miliseconds
 
 //should run forever to keep the database active
 app.get("/", (req, res) => sendApiRequest(res));
